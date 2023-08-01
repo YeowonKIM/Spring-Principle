@@ -1,4 +1,4 @@
-package spring01.core.grade;
+package spring01.core.member;
 
 import java.util.HashMap;
 import java.util.Map;

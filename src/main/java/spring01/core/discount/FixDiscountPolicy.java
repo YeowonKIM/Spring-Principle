@@ -1,7 +1,7 @@
 package spring01.core.discount;
 
-import spring01.core.grade.Grade;
-import spring01.core.grade.Member;
+import spring01.core.member.Grade;
+import spring01.core.member.Member;
 
 public class FixDiscountPolicy implements DiscountPolicy{
 

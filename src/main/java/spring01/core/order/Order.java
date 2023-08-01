@@ -1,4 +1,4 @@
-package spring01.core.discount;
+package spring01.core.order;
 
 public class Order {
 

@@ -1,9 +1,12 @@
-package spring01.core.grade;
+package spring01.core.member;
 
 public class MemberServiceImpl implements MemberService{
 
-    // 구현체가 없으면 NPE 나니까 구현체를 선택해 주어야 함.
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public void join(Member member) {

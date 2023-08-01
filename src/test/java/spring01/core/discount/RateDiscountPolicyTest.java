@@ -1,13 +1,11 @@
 package spring01.core.discount;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import spring01.core.grade.Grade;
-import spring01.core.grade.Member;
+import spring01.core.member.Grade;
+import spring01.core.member.Member;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class RateDiscountPolicyTest {
 

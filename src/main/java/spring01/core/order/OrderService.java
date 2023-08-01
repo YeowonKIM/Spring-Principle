@@ -1,4 +1,6 @@
-package spring01.core.discount;
+package spring01.core.order;
+
+import spring01.core.order.Order;
 
 public interface OrderService {
 
