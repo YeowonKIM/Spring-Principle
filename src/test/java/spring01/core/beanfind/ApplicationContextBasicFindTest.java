@@ -9,7 +9,7 @@ import spring01.core.AppConfig;
 import spring01.core.member.MemberService;
 import spring01.core.member.MemberServiceImpl;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ApplicationContextBasicFindTest {
 
