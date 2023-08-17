@@ -20,7 +20,8 @@ public class BeanLifeCycleTest {
 
     @Configuration
     static class LifeCycleConfig {
-        @Bean
+        //@Bean의 destroyMethod 는 기본값이 (inferred) (추론)으로 등록되어 있기 때문에, close , shutdown 라는 이름의 메서드를 자동으로 호출해준다.
+        @Bean(initMethod = "init", destroyMethod = "close")
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://spring01-core.dev");
