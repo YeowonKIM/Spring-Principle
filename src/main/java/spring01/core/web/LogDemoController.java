@@ -14,14 +14,15 @@ public class LogDemoController {
 
     private final LogDemoService logDemoService;
     // MyLogger를 주입 받는 것이 아니라, MyLogger를 찾을 수 있는 Dependency Lookup할 수 있는 것이 주입된다.
-    private final ObjectProvider<MyLogger> myLoggerProvider;
+    // private final ObjectProvider<MyLogger> myLoggerProvider;
+    private final MyLogger myLogger;
 
     @RequestMapping("log-demo")
     @ResponseBody
     public String logDemo(HttpServletRequest request) {
         String requestURL = request.getRequestURL().toString();
         // 1) 이 시점에 처음 만들어 짐.
-        MyLogger myLogger = myLoggerProvider.getObject();
+//        MyLogger myLogger = myLoggerProvider.getObject();
         // 3) setRequestURL
         myLogger.setRequestURL(requestURL);
 
